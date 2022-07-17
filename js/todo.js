@@ -2,7 +2,6 @@ const todoForm = document.getElementById("todo-form");
 const todoInput = todoForm.querySelector("input");
 const todoList = document.getElementById("todo-list");
 const username = document.getElementById("greeting-name");
-
 const TODOS_KEY = "todos";
 
 let toDos = []; // localStroage
@@ -49,11 +48,6 @@ let HandleToDoSubmit = (e) => {
   PaintToDo(newTodoObj);
   SaveToDos(); // save local storage
 
-  //   JSON.parse(localStorage.getItem(TODOS_KEY)).map((i) => {
-  //     if (i.name === username.innerHTML) PaintToDo(i);
-  //   });
-
-  // show on html
 };
 
 const showList = () => {
@@ -72,5 +66,3 @@ const showList = () => {
 
 showList();
 todoForm.addEventListener("submit", HandleToDoSubmit);
-
-// get Item

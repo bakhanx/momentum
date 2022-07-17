@@ -5,8 +5,6 @@ const greetingText = document.getElementById("greeting-text");
 const greetingName = document.getElementById("greeting-name");
 const greetingMsg = document.getElementById("greeting-message");
 const logoutBtn = document.getElementById("btn-logout");
-// const todoList = document.getElementById("todo-list");
-
 const GREETING_KEY = "names";
 
 let names = [];
@@ -21,6 +19,7 @@ const display_login = () => {
   enterInput.style.display = "none";
   greetingText.style.display = "inline";
   logoutBtn.style.display = "inline";
+  todoForm.style.display = "block";
   isLogin = true;
   console.log(isLogin);
 };
@@ -29,6 +28,7 @@ const display_nonlogin = () => {
   enterInput.style.display = "inline";
   greetingText.style.display = "none";
   logoutBtn.style.display = "none";
+  todoForm.style.display = "none";
   isLogin = false;
   console.log(isLogin);
 };
@@ -36,11 +36,6 @@ const display_nonlogin = () => {
 // init
 if (!isLogin) display_nonlogin();
 
-// if ((greetingName.innerHTML = localStorage.getItem(GREETING_KEY))) {
-//   display_login();
-// }
-
-// userName.innerHTML = localStorage.getItem(GREETING_KEY);
 const handleLoginSubmit = (e) => {
   e.preventDefault();
   if (
