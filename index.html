@@ -1,49 +1,67 @@
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/greeting.css">
-    <link rel="stylesheet" href="./css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="bg-black"></div>
     <div id="containers">
-        <!-- greeting -->
-        <h1></h1>
+      <div class="header">
+        <!-- Language Button -->
+        <div class="btn">
+          <button id="btn-language">English</button>
+          <button id="btn-logout">Logout</button>
+        </div>
 
         <!-- weather -->
         <div class="" id="weather">
-            <span></span>
-            <span></span>
+          <span>Loading...</span>
+          <span></span>
         </div>
+      </div>
 
-        <!-- clock -->
-        <h2 id="clock">00 : 00</h2>
+      <!-- clock -->
+      <h2 id="clock">00 : 00</h2>
 
-        <!-- todo List -->
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required>
-        </form>
-
-        <ul class="" id="todo-list"></ul>
-
-
-        <!-- footer word -->
-        <div id="quote">
-            <span></span>
-            <span></span>
+      <!-- greeting -->
+      <form id="greeting" class="btn">
+        <input
+          id="input-enter"
+          type="text"
+          placeholder="Input your Id"
+          required
+        />
+        <button id="btn-enter" type="submit">Enter</button>
+        <div id="greeting-text">
+          <span id="greeting-name"></span>
+          <span id="greeting-messsage">'s To Do</span>
         </div>
+      </form>
 
+      <!-- todo List -->
+      <form id="todo-form">
+        <input
+          type="text"
+          placeholder="Write a To Do and Press Enter"
+          required
+        />
+      </form>
 
+      <ul class="" id="todo-list"></ul>
 
-        <!-- Background Img -->
-        <!-- js에서 append로 추가 -->
+      <!-- footer word -->
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Background Img -->
+      <!-- js에서 append로 추가 -->
     </div>
-
 
     <script src="./js/greeting.js"></script>
     <script src="./js/clock.js"></script>
@@ -51,7 +69,5 @@
     <script src="./js/background.js"></script>
     <script src="./js/todo.js"></script>
     <script src="./js/weather.js"></script>
-
-</body>
-
+  </body>
 </html>

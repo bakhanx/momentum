@@ -15,6 +15,7 @@ let OnGeoSuccess = (pos) => {
         });
 }
 let OnGeoError = () => {
+    document.querySelector("#weather span:first-child").innerHTML=""
     alert("Can't find you. No weather for you")
 }
 

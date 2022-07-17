@@ -2,6 +2,7 @@ body {
   margin: 0;
   text-align: center;
   color: white;
+  box-sizing: border-box;
 }
 
 #clock {
@@ -33,6 +34,9 @@ body {
   height: 35px;
   min-width: 320px;
   text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 #quote {
@@ -57,4 +61,38 @@ body {
 #weather {
   text-align: right;
   margin-right: 10px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-width: 320px;
+  max-width: 400px;
+  margin: auto;
+  align-items: center;
+}
+
+.btn button {
+  width: 60px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border-radius: 5px;
+}
+.btn button:hover {
+  color: rgb(255, 139, 106);
+  cursor: pointer;
+}
+
+#greeting {
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+#greeting input {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  width: 240px;
+  height: 30px;
+  border-radius: 5px;
+  font-size: 16px;
 }/*# sourceMappingURL=index.css.map */

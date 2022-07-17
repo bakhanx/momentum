@@ -6,7 +6,5 @@ bgImg.id = 'bg';
 bgImg.src = `img/${chosenImg}`;
 
 //append 맨 뒤에 추가
-
-
 document.body.appendChild(bgImg);
 
